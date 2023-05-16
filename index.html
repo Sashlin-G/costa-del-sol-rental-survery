@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residents Survey</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="heading">
+    <h1 id=title>Costal Del Sol Rental Survey</h1>
+    <p id="description">We love to know about how we can improve our facilities! Each and every residents opinions are very precious to us!</p>
+    </div>
+    <div id="main">
+        <form id="survey-form">
+        <div id="input-fields">
+            <label id="name-label"><b>Name:</b></label>
+            <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
+            <br>
+            <label id="email-label"><b>Email:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+            <br>
+            <label id="number-label"><b>Apartment number:</b></label>
+            <input id="number" type="number" name="number" class="form" min="0" max="500" placeholder="Type room numer here...">
+         </div>
+         <div id="dropdown-div"><br>
+            <label id="dropdown-label"><strong>What can we improve on:</strong></label><br>
+            <select id="dropdown" name="improve" class="form">
+                <option value="perfect">Everything was perfect</option>
+                <option value="check-in">Check-in process</option>
+                <option value="comms">Communication</option>
+                <option value="payment">Payment options</option>
+                <option value="room">Room service</option>
+                <option value="pool">Pool cleaning</option>
+                <option value="ground">Grounds cleaning</option>
+                <option value="room">Room cleaning</option>
+                <option value="site">On-site facilities</option>
+            </select>
+         </div>
+         <div id="button-area">
+             <br>
+            <label id="stay-duration"><b>How long was your stay?:</b></label><br>
+            <input type="radio" class="radio-inline" name="days" value="7" checked> 1-7 days<br>
+            <input type="radio" class="radio-inline" name="days" value="20"> 8-20 days<br>
+            <input type="radio" class="radio-inline" name="days" value="30"> 21-30 days<br>
+            <input type="radio" class="radio-inline" name="days" value="long"> 30+ days (long term rental)
+          </div>
+          <div id="button-area"><br>
+            <label id="os-label"><b>Would you recommend us to family and friends ?: </b></label><br>
+            <input type="checkbox" name="opt1" value="yes" checked>Yes<br>
+            <input type="checkbox" name="opt2" value="no">No<br>
+            <input type="checkbox" name="opt3" value="maybe">Maybe<br>
+          </div>
+
+          <div id="dropdown"><br><br>
+            <label id="dropdown-label"><strong>Which facilites would you like to see next time your visit?:</strong></label><br>
+            <select id="dropdown" name="facilities" class="form"><br><br>
+                <option value="laundry">Laundry service</option>
+                <option value="poolbar">Poolside bar</option>
+                <option value="spa">Spa</option>
+                <option value="jaccuzi">Jaccuzi</option>
+                <option value="wine">Wine tasting</option>
+                <option value="Go">Go karts</option>
+                <option value="hike">Hiking trails</option>
+                <option value="taxi">Taxi service</option>
+                <option value="tour">Tour guides</option>
+            </select>
+         </div>
+          <div id="button-area"><br><br>
+            <label id="opt-label"><b>Subscribe to our newsletters:</b></label><br>
+            <input type="checkbox" name="sub1" value="rental"> Costa del sol rentals<br>
+            <input type="checkbox" name="sub2" value="discount"> Discounts<br>
+            <input type="checkbox" name="sub3" value="todo"> Things to do in Spain blog<br>
+            <input type="checkbox" name="sub3" value="tips"> Travel tips and tricks<br>
+          </div>
+
+
+          <div id="ending"><br><br>
+            <label id="comments-label">Additional information you want to share.</label><br>
+            <textarea style= height:120px; class="form" placeholder="Please write your comments here..."></textarea><br><br>
+            <input id="submit" type="submit"  class="form">
+          </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
